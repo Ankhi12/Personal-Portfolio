@@ -1,0 +1,353 @@
+ body{
+    background-color: rgb(235, 234, 234);
+} 
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Changa", sans-serif;
+    color: green;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 40px;
+    max-width: 100%;
+    height: auto;
+}
+
+.work-folder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px; 
+}
+.about-me{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; 
+    background-color: rgb(235, 234, 234);
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    gap: 10px;
+}
+.heading-about-me{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+.photo-div{
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 60px;
+    padding-left: 40px;
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(108, 206, 86);
+    filter: brightness(50%);
+}
+.linkedin{
+    margin-left: 68px;
+    font-size: 20px;
+}
+.linkedin a{
+    color: rgb(20, 20, 20);
+}
+.me-text{
+    grid-column: 2;
+    grid-row: 2;
+    color: rgb(17, 17, 17);
+    padding-left: 40px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+.arrows-body{
+    display: flex;
+    flex-direction: row;
+    margin-top: 17rem;
+    max-width: 100%;
+    height: auto;
+    align-self: flex-start;
+    justify-content: center;
+
+  }
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-top: 12px solid #322a2a; 
+    border-right: 12px solid #3e3131;
+    transform: rotate(45deg);
+    animation: arrow-load 2s infinite;
+  }
+  .arrow:nth-child(1){
+    left: 25px;
+    animation-delay: -0.4s;
+  }
+  .arrow:nth-child(2){
+    animation-delay: -0.2s;
+  }
+  .arrow:nth-child(3){
+    right: 25px;
+  }
+  @keyframes arrow-load{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translateX(-5px)
+    }
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform:rotate(45deg) translateX(5px)
+    } 
+  }
+  #experience-open,
+  #skills-project{
+    display: none;
+}
+
+#experience,
+#experience-open{
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+} 
+
+#skills-project{
+    flex-direction: column;
+}
+.col-1,
+.col-2{
+    flex: 1;
+}
+.col-2{
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.glow-ball {
+    width: 90px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid rgb(15, 15, 15); 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ball-label {
+    color: rgb(12, 12, 12);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+
+  .glow-ball:hover .ball-label {
+    opacity: 1;
+  }
+    
+  .glow-ball:hover {
+    box-shadow: 0 0 10px currentColor, 0 0 20px currentColor; 
+  }
+  .carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 10px;
+    width: 100%;              
+    overflow: hidden;          
+    background-color: rgb(235, 234, 234);
+
+  }
+
+  .carousel-heading{
+    flex:1;
+    justify-self: center;
+  }
+  
+.carousel-track {
+  display: flex;
+  max-width: 100%;        
+  animation: scroll 8s linear infinite; 
+}
+
+.carousel-track p {
+  width: 200px;             
+  height: 150px;  
+  font-size: 30px;    
+  color: rgb(26, 26, 26);       
+  margin-right: 10px;
+}
+
+
+@keyframes scroll {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+ .nav-button {
+    display: inline-block;
+    margin-left: auto;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background:black;
+    border: 2px solid white;
+    color: white;
+    font-weight: normal;
+    width: auto;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 150px;
+    margin-right: 50px;
+    white-space: nowrap;
+  }
+  .nav-button:last-child {
+     margin-right: 0;         /* no extra gap after the last one */
+}
+  .nav-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+
+  /*Mobile - Single column */
+  /* Mobile */
+@media (max-width: 576px) {
+  .container {
+    font-size: 30px; 
+    padding: 50px;
+  }
+  .work-folder{
+    margin-top: auto;
+    padding-top: 13px;
+  }
+  #experience,
+  #experience-open{
+    padding-top: auto;
+    max-width: 100%;
+    width: 850px;
+    height: auto;
+} 
+
+  .arrows-body{
+    margin-top: 3rem;
+    max-width: 100%;
+    height: auto;
+    align-items: flex-start;
+  }
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 8px solid #5a4f4f;
+    border-right: 8px solid #523f3f;
+  }
+  .glow-ball {
+    width: 60px;
+    height: 60px;
+  }
+  .nav-button {
+    width: 100%; 
+    margin: 10px 0;
+  }
+  .col-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin:auto;
+  }
+  .about-me{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .photo{
+    width: 100px;
+    height: 100px;
+    margin-right: 80px;
+  } 
+  .linkedin{
+    margin-left: 15px;
+  }
+  .me-text{
+    align-self: center;
+  }
+}
+
+@media(min-width: 768px) and (max-width:1025px){
+
+    .container {
+    font-size: 40px;          
+    padding: 110px;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .folder{
+    margin-top: 50px;
+  }
+  .arrows-body{
+    position: relative;
+    margin-top: 30px;
+    padding-top: 110px;
+  }
+  #skills-project {
+    flex-direction: column;   
+  }
+
+  .col-1, .col-2 {
+    width: 100%;              
+    align-items: center;
+  }
+  .col-1,
+  .col-2 p{
+    font-size: 20px;
+  }
+
+  .glow-ball {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav-button {
+    width: 70%;               
+    margin: 10px 0;
+  }
+  .about-me{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .photo{
+    width: 150px;
+    height: 150px;
+    margin-right: 80px;
+  } 
+  .linkedin{
+    margin-left: 35px;
+  }
+  .me-text{
+    align-self: center;
+    font-size: 30px;
+  }
+
+
+}
+

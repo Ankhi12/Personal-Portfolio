@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontEndProjects.css">
+    <title>Front End Project</title>
+</head>
+<body>
+    <div class="project-body">
+        <div class="left-column">
+            <img src="./Images/Wireframe.JPG" alt="wireframe of a fintech mobile app improvement" class="wireframe-img">
+        </div>
+        <div class="right-column">
+            
+            <div class="right-body">
+
+                <textarea readonly class="problem">
+                    Problem
+                </textarea>
+                <div class="problem-def">
+                    The FinTech company was not getting enough traffic due to UX problems, and UI issues like button placement, and not following industry specific pattern.
+                </div>
+                <textarea readonly class="solution">
+                Solution
+                </textarea>
+                <div class="solution-def">
+                    I invested time in market research, what is common in the industry, which one features is most talked about and how it mapped with business requirement.
+                    After that, I implemented these with HTML, CSS, ES6, React JS, and Express JS.
+                </div>
+                <textarea readonly class="impact">
+                Impact
+                </textarea>
+                  <div class="impact-def">
+                    The result was:
+                    <ul>
+                        <li>
+                            High Incoming Traffic
+                        </li>
+                        <li>
+                            More contact us fill ups
+                        </li>
+                        <li>
+                            Higher page engagement time
+                        </li>
+                    </ul>
+                </div>
+
+                  
+                <button class="next-button" id="next">Next</button>
+
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        const button = document.getElementById("next")    
+
+        button.addEventListener("click", ()=>{
+            window.location.href = "./seoanalysisProject.html"
+        })
+    </script>
+</body>
+</html>

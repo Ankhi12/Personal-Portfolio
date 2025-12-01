@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Project.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <title>Portfolio | Ankhi</title>
+</head>
+<body>
+
+    <div class="container">
+        Here's how I've helped companies with my coding skills & continuing to do so...
+        <div class="work-folder">
+            <div class="arrows-body">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
+            <div class="folder">
+                <img id="experience"src="./Images/Closed Folder.jpg" alt="Experience Folder"/>
+                <img id="experience-open" src="./Images/Open Folder.jpg" alt="Experience Folder Open"/>
+            </div>
+        </div>
+
+        <div id="skills-project">
+            <div class="col-1">
+                <p>Skills</p>
+            
+                <div class="glow-ball">
+                    <div class="ball-label">HTML</div>
+                </div>
+                <div class="glow-ball">
+                    <div class="ball-label">CSS</div>
+                </div>
+                <div class="glow-ball">
+                    <div class="ball-label">JavaScript</div>
+                </div>
+                <div class="glow-ball">
+                    <div class="ball-label">React JS</div>
+                </div>
+                <div class="glow-ball">
+                    <div class="ball-label">Node JS</div>
+                </div>
+                <div class="glow-ball">
+                    <div class="ball-label">Bootstrap</div>
+                </div>
+                <div class="glow-ball">
+                    <div class="ball-label">Python</div>
+                </div>
+                <div class="glow-ball">
+                    <div class="ball-label">Restful API</div>
+                </div>
+                <div class="glow-ball">
+                    <div class="ball-label">Mongo DB</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Projects</p>
+                <button class="nav-button" id="front-end">
+                    FrontEnd
+                </button>
+                <button class="nav-button" id="seo">
+                    SEO
+                </button>
+                
+            </div>
+        </div>
+         <div class="about-me">
+            <dib class="heading-about-me">
+                About Me
+            </dib>
+            <div class="photo-div">
+                <img src="./Images/me.jpg" alt="Me" class="photo">
+                <div class="linkedin">
+                    <a href="https://in.linkedin.com/in/ankhi-34556226" target="_blank">LinkedIn</a>
+                </div> 
+            </div>
+                <div class="me-text">
+                    I have software development as well as digital marketing experience. In the recent years, I have helped
+                    companies both via marketing and UI development.
+
+                    Now, with the knowledge acquired, I want to bring in my transferable skills as a FrontEnd developer.
+                </div>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-heading">
+                    Worked in
+                </div>
+                <div class="carousel-track">
+                    <p>IdeaCrest</p>
+                    <p>Qentelli</p>
+                    <p>Synopsys</p>
+                    <p>Wipro</p>
+                </div>
+            </div>
+    </div>
+    <script>
+        const image_click = document.getElementById("experience");
+        const open_image = document.getElementById("experience-open")
+        const skills_project = document.getElementById("skills-project")
+        const front_end = document.getElementById("front-end")
+        const seo = document.getElementById("seo")
+
+        front_end.addEventListener("click", ()=>{
+            window.location.href = "./frontEndProjects.html"
+        })
+
+        seo.addEventListener("click", ()=>{
+            window.location.href = "./seoanalysisProject.html"
+        })
+        image_click.addEventListener("click", ()=>{
+            image_click.style.display = "none"
+            open_image.style.display = "flex"
+            skills_project.style.display = "flex"
+        })
+        open_image.addEventListener("click", ()=>{
+            open_image.style.display = "none"
+            skills_project.style.display = "none"
+            image_click.style.display = "flex"
+        })
+    </script>
+</body>
+</html>
