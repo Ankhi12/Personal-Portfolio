@@ -105,6 +105,7 @@ body{
         text-align: center;
     }
     .left-column {
+        padding: 0px;
         border-bottom: 1px dashed rgb(16, 16, 16);
     }
     .right-column{
@@ -137,4 +138,5 @@ body{
         gap: 40px;
     }
 }
+
 
