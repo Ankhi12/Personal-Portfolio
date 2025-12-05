@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./youTubeLooknFeel.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>YouTube Improvement</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            YouTube Re-Imagined
+        </div>
+        <div class="content">
+            I absolutely adore YouTube. 
+            It’s the app I use the most right after LinkedIn. 
+            <br/>
+            A few months ago, I noticed the left-to-right slider of video categories that appears after you search for something.
+            <br/> 
+            I’m not sure if it’s just me, but I feel the slider could be reduced to at most six options. 
+            
+            Because even if I’m a fan of an artist, I’m not going to scroll through every single category. 
+            
+            Maybe some people do, but to me it creates unnecessary cognitive load.
+            <br/>
+            <br/>
+
+            So, I thought: why not refine these buttons? It might make things easier for users like me.
+            <ul>
+                <li>
+                    Remove “All”: There’s no real need for it, because after a search YouTube already shows videos, shorts, live streams, etc. all together by default. 
+                    The “All” option is implied.
+                </li>
+                <li>
+                    Videos ---> for long form content
+                </li>
+                <li>
+                    Live ---> shown only if relevant live streams are happening
+                </li>
+                <li>
+                    Shorts
+                </li>
+                <li>
+                    Trending ---> shown only when a song or piece of content from the searched artist is currently trending,
+                </li>
+                <li>
+                    Popular Track
+                </li>
+                <li>
+                    Recently uploaded
+                </li>
+                <li>
+                    Oldest Video
+                </li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="./Images/YouTube Image.jpg" class="youTube-screen" alt="YouTube Search screen">
+            <img src="./Images/YouTube option a.jpg" class="option-a" alt="Option a">
+            <img src="./Images/YouTube option b.jpg" class="option-b" alt="Option b">
+        </div>
+        <div class="footer">
+
+            <p>What do you think?</p>
+
+            <button class="next-button" id="next">Next</button>
+        </div>
+    </div>
+    <script>
+        const nextPage = document.getElementById("next");
+        nextPage.addEventListener("click", ()=>{
+            window.location.href = "./frontEndProjects.html"
+        })
+    </script>
+</body>
+</html>

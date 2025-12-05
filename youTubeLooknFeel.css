@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(235, 234, 234);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.heading{
+    color: green;
+    font-family: "Changa", sans-serif;
+    font-size: 40px;
+    align-self: center;
+    margin: 20px;
+    padding: 20px;
+}
+.content{
+    font-family: "Changa", sans-serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 1rem;
+    line-height: 1.;
+}
+
+.youTube-screen,
+.option-a,
+.option-b{
+    max-width: 100%;
+    width: 600px;
+    height: 600px;
+    
+    display: block;
+    margin: 0 auto;
+    align-self: self-start;
+}
+
+.images{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.footer p{
+    font-family: "Changa", sans-serif;
+    font-size: 30px;
+    color: green;
+}
+.next-button{
+    max-width: 100%;
+    width: 150px;
+    background-color: black;
+    border: 2px solid white;
+    color: wheat;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+   .heading{
+    font-size: 25px;
+   }
+   .content{
+    font-size: 17px;
+    padding: 0;
+   }
+    .youTube-screen,
+    .option-a,
+    .option-b{
+    max-width: 100%;
+    width: 350px;
+    height: 350px;
+    
+    display: block;
+    margin: 0 auto;
+    align-self: self-start;
+}   
+}
+
